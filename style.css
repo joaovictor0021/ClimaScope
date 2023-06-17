@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin-left: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #070708;
+}
+
+section {
+    background: #0e0e11;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 8px;
+}
+
+.header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #d6d6d6;
+}
+
+#input {
+  font-size: .9rem;
+  font-weight: 600;
+  width: 14rem;
+  height: 1.4rem;
+  padding: 5px 10px;
+  margin-right: 1rem;
+  color: #2e2e2e;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  background: #ebebeb;
+}
+
+.header i {
+  font-size: 17px;
+  padding: .7rem;
+  background: #5f5f5f;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header i:hover {
+  background: #5f5f5f80;
+}
+
+.weather {
+  text-align: center;
+  color: #ebebeb;
+}
+
+#city {
+  font-size: 30px;
+}
+
+.weather img {
+  width: 110px;
+  height: 110px;
+}
+
+#temperature {
+  font-size: 50px;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.temp-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#clouds {
+  font-size: 20px;
+  font-weight: 500;
+  background: #5f5f5f;
+  padding: 2px 20px;
+  border-radius: 15px;
+}
+
+main {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-columns: 1fr 5px 1fr;
+  align-items: center;
+  margin: 0 50px;
+  color: #ebebeb;
+}
+
+.next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.next p, .next h3 {
+  margin: 3px 0;
+}
+
+
+
+.forecstD {
+    color: #ebebeb;
+}
+
+.weekF {
+  font-weight: 600;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+}
+
+.cast-header {
+    display: flex;
+    align-items: center;
+    color: #ebebeb;
+    background: #5f5f5f;
+    width: max-content;
+    padding: .1rem 1rem;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.divider1, .divider2 {
+  background: #5f5f5f;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.divider2 {
+  height: 5px;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.time, .date {
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+.next {
+    margin: 8px;
+    padding: 1rem;
+}
+
+.desc {
+  font-weight: 600;
+  color: #5f5f5f;
+  margin-bottom: 7rem;
+}
+
+footer {
+    background: #070708;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:  0 1rem  0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    width: 8rem;
+}
+
+.icons a {
+    font-size: 1.5rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    color: #2e2e2e;
+}
+
+footer .icons {
+    color: var(--back-color);
+    font-size: 3rem;
+}
+
+.icons i {
+    transition: .2s ease-out;
+}
+
+.icons .whatsapp-icon:hover {
+    color: #00fd0d;
+}
+
+.icons .github-icon:hover {
+    color: #e2e2e2;
+}
+
+.icons .linkedin-icon:hover {
+    color: #0066ff;
+}
+
+.icons i:hover {
+    transform: scale(1.4);
+}
+
+/* Estilos para telas menores que 500px */
+
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    margin-top: 0rem;
+    font-size: 3.3rem;
+  }
+
+  #input {
+    margin-top: 2rem;
+  }
+
+  #temperature {
+    margin-left: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .divider1{
+    background: #5f5f5f;
+    margin: 0 10% 0 10% ;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 4px;
+    border-radius: 5px;
+  }
+
+
+  .weekF {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    #input {
+        font-size: .9rem;
+        font-weight: 600;
+        width: 9.52rem;
+        height: 1.4rem;
+        padding: 5px 10px;
+        margin-right: 1rem;
+        color: #2e2e2e;
+        outline: none;
+        border: none;
+        border-radius: 2rem;
+        background: #ebebeb;
+      }
+
+    #city {
+        font-size: 1.6rem;
+    }
+
+    .weather img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #temperature {
+        font-size: 40px;
+    }
+
+    #clouds {
+        font-size: 15px;
+    }
+
+    .cast-header {
+        font-size: 15px;
+    }
+}
